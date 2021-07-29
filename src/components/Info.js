@@ -48,13 +48,13 @@ const UserInfo = () => {
 };
 
 const Item = ({icon,label,value,color}) => {
-  return <artical className="item">
+  return <article className="item">
     <span className={color}>{icon}</span>
     <div>
       <h3>{value}</h3>
       <p>{label}</p>
     </div>
-  </artical>
+  </article>
 }
 
 const Wrapper = styled.section`
