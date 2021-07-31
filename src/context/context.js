@@ -14,17 +14,57 @@ const GithubProvider = ({children}) => {
   const [followers, setFollowers] = useState(mockFollowers);
   // request loading
   const [requests, setRequests] = useState(0);
-  const [loading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  // error
+  const [error,setError] = useState({show:false,msg:""})
+
+  const searchGithubUser = async (user) => {
+    toggleError(); //作用：再次查询后提示消失，否则提示一直在
+    setIsLoading(true);
+    const response = await axios(`${rootUrl}/users/${user}`).catch(err => console.log(err))
+    console.log(response);
+    if (response){
+      setGithubUser(response.data);
+      // more logic here
+    } else {
+      toggleError(true, 'there is no user with that username')
+    }
+    checkRequests();
+    setIsLoading(false);
+  }
   // check rate
   const checkRequests = () => {
-    axios
+    axios(`${rootUrl}/rate_limit`)
+      .then(({data}) => {
+        let {
+          rate:{remaining}
+        } = data;
+        setRequests(remaining);
+        if (remaining === 0) {
+          toggleError(true,'sorry, you have exceeded your hourly rate limit!')
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+  function toggleError(show,msg){
+    setError({ show, msg})
   }
   // error
-  useEffect(() => {
-    console.log('hey app loaded');
-  },[])
+  useEffect(checkRequests,[])
   return (
-    <GithubContext.Provider value={{githubUser, repos, followers}}>{children}</GithubContext.Provider>
+    <GithubContext.Provider 
+      value={{
+        githubUser, 
+        repos, 
+        followers, 
+        requests, 
+        error, 
+        searchGithubUser,
+        isLoading
+      }}
+    >
+      {children}
+    </GithubContext.Provider>
   );
 };
 
