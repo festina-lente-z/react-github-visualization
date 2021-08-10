@@ -474,7 +474,7 @@ export default [
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 62,
+    "open_issues_count": 64,
     "license": {
       "key": "0bsd",
       "name": "BSD Zero Clause License",
@@ -483,7 +483,7 @@ export default [
       "node_id": "MDc6TGljZW5zZTM1"
     },
     "forks": 0,
-    "open_issues": 62,
+    "open_issues": 64,
     "watchers": 0,
     "default_branch": "main"
   },
@@ -1518,16 +1518,16 @@ export default [
     "releases_url": "https://api.github.com/repos/festina-lente-z/react-github-visualization/releases{/id}",
     "deployments_url": "https://api.github.com/repos/festina-lente-z/react-github-visualization/deployments",
     "created_at": "2021-06-26T01:11:31Z",
-    "updated_at": "2021-08-02T14:30:46Z",
-    "pushed_at": "2021-08-02T14:30:43Z",
+    "updated_at": "2021-08-02T15:43:37Z",
+    "pushed_at": "2021-08-02T15:43:34Z",
     "git_url": "git://github.com/festina-lente-z/react-github-visualization.git",
     "ssh_url": "git@github.com:festina-lente-z/react-github-visualization.git",
     "clone_url": "https://github.com/festina-lente-z/react-github-visualization.git",
     "svn_url": "https://github.com/festina-lente-z/react-github-visualization",
     "homepage": null,
-    "size": 506,
-    "stargazers_count": 0,
-    "watchers_count": 0,
+    "size": 518,
+    "stargazers_count": 1,
+    "watchers_count": 1,
     "language": "JavaScript",
     "has_issues": true,
     "has_projects": true,
@@ -1542,7 +1542,7 @@ export default [
     "license": null,
     "forks": 0,
     "open_issues": 0,
-    "watchers": 0,
+    "watchers": 1,
     "default_branch": "main"
   },
   {
@@ -2470,7 +2470,7 @@ export default [
     "releases_url": "https://api.github.com/repos/festina-lente-z/xlwings-demo/releases{/id}",
     "deployments_url": "https://api.github.com/repos/festina-lente-z/xlwings-demo/deployments",
     "created_at": "2021-05-30T03:42:43Z",
-    "updated_at": "2021-05-30T05:31:08Z",
+    "updated_at": "2021-08-02T15:07:47Z",
     "pushed_at": "2021-05-30T05:31:06Z",
     "git_url": "git://github.com/festina-lente-z/xlwings-demo.git",
     "ssh_url": "git@github.com:festina-lente-z/xlwings-demo.git",
@@ -2478,8 +2478,8 @@ export default [
     "svn_url": "https://github.com/festina-lente-z/xlwings-demo",
     "homepage": null,
     "size": 18,
-    "stargazers_count": 0,
-    "watchers_count": 0,
+    "stargazers_count": 1,
+    "watchers_count": 1,
     "language": null,
     "has_issues": true,
     "has_projects": true,
@@ -2494,7 +2494,7 @@ export default [
     "license": null,
     "forks": 0,
     "open_issues": 0,
-    "watchers": 0,
+    "watchers": 1,
     "default_branch": "master"
   }
 ];

@@ -8,24 +8,30 @@ const Search = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user) {
-      searchGithubUser(user)
+      searchGithubUser(user);
       // setUser('');
     }
-  }
+  };
   return (
     <section className="section">
       <Wrapper className="section-center">
-        { error.show && 
+        { error.show && (
           <ErrorWrapper>
             <p>{error.msg}</p>
           </ErrorWrapper>
-        }
+        )}
         <form onSubmit={handleSubmit}>
           <div className="form-control">
             <MdSearch />
-            <input type="text" placeholder="enter github user"
-              value={user} onChange={(e)=>setUser(e.target.value)}/>
-            {requests > 0 && !isLoading && (<button type='submit'>search</button>) }
+            <input 
+              type="text" 
+              placeholder="enter github user"
+              value={user} 
+              onChange={(e)=>setUser(e.target.value)}
+            />
+            {requests > 0 && !isLoading && (
+              <button type='submit'>search</button>
+            )}
           </div>
         </form>
         <h3>requests: {requests} / 60</h3>
@@ -37,12 +43,15 @@ const Search = () => {
 const Wrapper = styled.div`
   position: relative;
   display: grid;
+  /* gap: 1rem 1.75rem; */
   gap: 1rem 1.75rem;
   @media (min-width: 768px) {
+    /* grid-template-columns: 1fr max-content; */
     grid-template-columns: 1fr max-content;
     align-items: center;
     h3 {
-      padding: 0 0.5rem;
+      /* padding: 0 0.5rem; */
+      padding: 0 0.85rem;
     }
   }
   .form-control {

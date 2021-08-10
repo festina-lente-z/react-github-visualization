@@ -18,5 +18,25 @@ export default [
     "received_events_url": "https://api.github.com/users/tanzenyoyoyo/received_events",
     "type": "User",
     "site_admin": false
+  },
+  {
+    "login": "OkamiMks",
+    "id": 58578838,
+    "node_id": "MDQ6VXNlcjU4NTc4ODM4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/58578838?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OkamiMks",
+    "html_url": "https://github.com/OkamiMks",
+    "followers_url": "https://api.github.com/users/OkamiMks/followers",
+    "following_url": "https://api.github.com/users/OkamiMks/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OkamiMks/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OkamiMks/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OkamiMks/subscriptions",
+    "organizations_url": "https://api.github.com/users/OkamiMks/orgs",
+    "repos_url": "https://api.github.com/users/OkamiMks/repos",
+    "events_url": "https://api.github.com/users/OkamiMks/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OkamiMks/received_events",
+    "type": "User",
+    "site_admin": false
   }
 ];

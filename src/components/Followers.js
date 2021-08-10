@@ -62,7 +62,8 @@ const Wrapper = styled.article`
     align-items: center;
     column-gap: 1rem;
     img {
-      height: 100%;
+      /* height: 100%; */
+      height: 45px;
       width: 45px;
       border-radius: 50%;
       object-fit: cover;

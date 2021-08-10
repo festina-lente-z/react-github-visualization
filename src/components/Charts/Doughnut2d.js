@@ -18,20 +18,20 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 // STEP 2 - Chart Data
-const chartData = [
-  {
-    label: "HTML",
-    value: "13"
-  },
-  {
-    label: "CSS",
-    value: "23"
-  },
-  {
-    label: "JavaScript",
-    value: "80"
-  }
-];
+// const chartData = [
+//   {
+//     label: "HTML",
+//     value: "13"
+//   },
+//   {
+//     label: "CSS",
+//     value: "23"
+//   },
+//   {
+//     label: "JavaScript",
+//     value: "80"
+//   }
+// ];
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 
@@ -50,7 +50,7 @@ const Doughnut2d = ({data}) => {
         decimals: 0,
         doughnutRadius: '45%',
         showPercentValues: 0,
-        theme: 'candy',
+        theme: 'fusion',
       },
       // Chart Data
       data
