@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useAuth0 } from '@auth0/auth0-react';
+import React from 'react'
+import styled from 'styled-components'
+import { useAuth0 } from '@auth0/auth0-react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const {
@@ -28,7 +29,10 @@ const Navbar = () => {
         </button>
       ):(
         <button onClick={loginWithRedirect}>login</button>
-      )}  
+      )} 
+      {
+        isUser && <Link to="/settings">Settings</Link>
+      } 
     </Wrapper>
   );
 };

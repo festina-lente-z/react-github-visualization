@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { GithubProvider } from './context/context';
-import { Auth0Provider } from '@auth0/auth0-react';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import * as serviceWorker from './serviceWorker'
+import { GithubProvider } from './context/context'
+import { Provider } from 'react-redux'
+import { Auth0Provider } from '@auth0/auth0-react'
 
 // dev-e3ktlge5.us.auth0.com
 // Uy0bu93ioscx4YqtedE8mk94mEWQltXs
